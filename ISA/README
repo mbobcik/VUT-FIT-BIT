@@ -1,0 +1,50 @@
+Program isashark nacita *.pcap soubory a pro kazdy paket vypise na radek jake protokoly obsahuje a hodnoty na urcitych polich protokolu. 
+
+Podporovane protokoly:
+    -Ethernet
+    -IEEE 802.1Q
+    -IEEE 802.1ad
+    -IPv4
+    -IPv6
+    -ICMPv4
+    -ICMPv6
+    -TCP
+    -UDP
+
+Rozsireni:
+
+Omezeni:
+    -program nepodporuje fragmentaci IPv4 paketu
+
+Pouziti:
+    isashark [-h] [-a aggr-key] [-s sort-key] [-l limit] [-f filter-expression] file ...
+    -h Napoveda
+    -a aggr-key Agregace podle klice aggr-key. Pokud zadany aggr-key neni podporovan, program konci s kodem 3.
+        srcmac Zdrojova MAC adresa
+        dstmac Cilova MAC adresa
+        srcip Zdrojova IP adresa
+        dstip Cilova IP adresa
+        srcport Zdrojovy port (pouze u TCP a UDP paketu) 
+        dstport Cilovy port (pouze u TCP a UDP paketu)
+    -s sort-key Sestupne razeni podle klice sort-key. Pokud zadany sort-key neni podporovan, program konci s kodem 3.
+        packets Razeni podle poctu paketu (pouze u agregace)
+        bytes Razeni podle poctu bytu
+    -l limit Maximalni pocet vypsanych zaznamu. limit musi byt cele nezaporne cislo, jinak program konci s kodem 3.
+    -f filter-expression Program zpracuje pouze pakety vyhovujici pcap filtru, ktery je zadany v filter-expression. Pokud zadany retezec nevyhovuje pcap filtru, program se ukonci s kodem 2.
+    file cesta k souborum ve formatu pcap. Pokud zadane soubory neexistuji, nebo nejdou otevrit, program se ukonci s kodem 1.
+
+Priklad spusteni
+    ./isashark -h
+    ./isashark eth_ipv4_tcp.pcap 
+    ./isashark eth_ipv4_tcp.pcap eth_dot1q_ipv6_udp.pcap 
+    ./isashark -f "src host 2001:db8::1" mix.pcap
+    ./isashark -f "src host 2001:db8::1" -a srcip mix.pcap
+    ./isashark -l 3 mix.pcap 
+    ./isashark -a srcip -s bytes mix.pcap 
+    ./isashark -l 5 -s bytes mix.pcap 
+
+Seznam odevzdanych souboru
+    ./isashark.cpp
+    ./README
+    ./Makefile
+    ./manual.pdf
