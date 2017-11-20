@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator</name>
+    </assembly>
+    <members>
+        <member name="M:Calculator.Form1.DisableTabStop(System.Windows.Forms.Control)">
+            <summary>
+            Rekurzivně projde všechny componenty, které se nacházejí pod componentou ctrl
+            a deaktivuje přeskakování mezi nimi pomocí tabulátoru
+            </summary>
+            <param name="ctrl"></param>
+        </member>
+        <member name="M:Calculator.Form1.vypocitat">
+            <summary>
+            Metoda se stará o inicializaci a předání informací parseru
+            </summary>
+        </member>
+        <member name="M:Calculator.Form1.AddtoTextBox(System.String)">
+            <summary>
+            Metoda bere jako parametr string, který uloží na index v textBoxu, kde se nachází kurzor
+            str obsahuje zástupnou značku, která definuje, kam se má přesunout kurzor
+            </summary>
+            <param name="str"></param>
+        </member>
+        <member name="M:Calculator.Form1.AddtoTextBox(System.String,System.Int32)">
+            <summary>
+            Metoda bere jako parametr string, který uloží na index  i
+            str obsahuje zástupnou značku, která definuje, kam se má přesunout kurzor
+            </summary>
+            <param name="str"></param>
+            <param name="i"></param>
+        </member>
+        <member name="M:Calculator.Form1.fillListBox(System.Windows.Forms.ListBox,System.Int32)">
+            <summary>
+            Metoda zaplní ListBox l názvy metod z místní proměnné typu MethodInfo
+            </summary>
+            <param name="l">Listbox, který naplňujeme</param>
+            <param name="startIndex">Určuje kolik prvních nalezených prvků má metoda vynechat</param>
+        </member>
+        <member name="M:Calculator.Form1.getLastWord(System.String)">
+            <summary>
+            Metoda z řetězce vyhledá poslední nalezenou nepřerušenou posloupnost písmen
+            </summary>
+            <param name="s">Řetězec, jenž má metoda prohledat</param>
+            <returns>Vrací řetezec obsahující poslední nepřerušenou posloupnost písmen</returns>
+        </member>
+        <member name="M:Calculator.Form1.Reverse(System.String)">
+            <summary>
+            Metoda převrací řetezec
+            </summary>
+            <param name="s">Řetězec, který má metoda převrátit</param>
+            <returns>Vrací převrácený řetězec</returns>
+        </member>
+        <member name="M:Calculator.Form1.ToogleFunctions">
+            <summary>
+            Přepínání mezi rozšířenou verzí s tlačítky funkcí a minimalistickou verzí
+            </summary>
+        </member>
+        <member name="F:Calculator.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Calculator.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Calculator.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:Calculator.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:Calculator.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Calculator.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Calculator.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

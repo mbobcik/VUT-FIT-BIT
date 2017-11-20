@@ -1,0 +1,4 @@
+Profilling jsem provádìl na parseru výrazù krokováním, po odhalení zbyteèných krokù,jsem napravil pùvodní chybu v cyklu, kvùli níž se volal nìkolikrát místo pouze jednou.
+Cyklus pracoval tak, že po každém operátoru na který narazil se vrátil opìt na zaèátek a hledal další.
+Po opravì se provádí jenom jednou a po narazení na operátor se vrací o pøíslušný poèet políèek zpìt.
+Optimalizace se projevila asi 15% nárùstem výkonu pøi volání nìkolika stovek výpoètù dlouhých matematických výrazù.

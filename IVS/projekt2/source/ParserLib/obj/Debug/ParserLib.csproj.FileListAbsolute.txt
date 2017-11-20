@@ -1,0 +1,13 @@
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\ParserLib.XML
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\ParserLib.dll
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\ParserLib.pdb
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\obj\Debug\ParserLib.csprojResolveAssemblyReference.cache
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\obj\Debug\ParserLib.dll
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\obj\Debug\ParserLib.pdb
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\mscorlib.dll
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\cs\mscorlib.resources.dll
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\normidna.nlp
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\normnfc.nlp
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\normnfd.nlp
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\normnfkc.nlp
+C:\Users\Martin\Documents\GitHub\Calculator2.0\source\ParserLib\bin\Debug\normnfkd.nlp

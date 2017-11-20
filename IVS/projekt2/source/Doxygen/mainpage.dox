@@ -1,0 +1,6 @@
+/**
+\mainpage Strucny popis
+<h1>Hlavni stranka</h1>
+Projektova dokumentace k projektu, C
+Program kalkulacka slouzi nejen pro jednoduche vypocty, ale i pro slozitejsi funkce.
+Mimo jine zvladne vypocty se zavorkami a rozlisuje prednost matematickych operatoru. Program je licencovan podle GNU GPL verze 3.

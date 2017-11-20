@@ -1,0 +1,274 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ParserLib</name>
+    </assembly>
+    <members>
+        <member name="M:ParserLib.MathLib.#cctor">
+            <summary>
+            Vrací true, pokud je daný výraz číselného charakteru
+            </summary>
+            <param name="Expression"></param>
+            <returns>Vrací true pokud je výraz číselný</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.max(System.Double,System.Double)">
+            <summary>
+            Vracia väčšie z dvoch čísel
+            </summary>
+            <param name="a">Prvé číslo, ktoré sa bude porovnávať</param>
+            <param name="b">Druhé číslo, ktoré sa bude porovnávať</param>
+            <returns>Vracia väčšie z dvoch zadaných čísel a,b</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.min(System.Double,System.Double)">
+            <summary>
+            Vracia menšie z dvoch čísel
+            </summary>
+            <param name="a">Prvé číslo, ktoré sa bude porovnávať</param>
+            <param name="b">Druhé číslo, ktoré sa bude porovnávať</param>
+            <returns>Vracia menšie z dvoch zadaných čísel a,b</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.pow(System.Double,System.Double)">
+            <summary>
+            Vracia prvé číslo umocnené na druhé
+            </summary>
+            <param name="a">Základ - číslo, ktoré bude umocňované</param>
+            <param name="b">Exponent - číslo, na ktoré bude umocnený základ</param>
+            <returns></returns>
+        </member>
+        <!-- Chybně vytvořený komentář XML je ignorován pro člena M:ParserLib.MathLib.rnd(System.Double,System.Double) -->
+        <member name="M:ParserLib.MathLib.sqrt(System.Double)">
+            <summary>
+            Vrací odmocninu čísla
+            </summary>
+            <param name="a">Číslo, ktorého odmocnina bude spočítaná</param>
+            <returns>Vracia odmocninu čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.sqrtn(System.Double,System.Double)">
+            <summary>
+            Vrací b-tou odmocninu čísla a
+            </summary>
+            <param name="a">Číslo, ktorého odmocnina bude spočítaná</param>
+            <param name="b">Číslo vyjadřující kolikátá odmocnina bude spočítána</param>
+            <returns>Vrací b-tou odmocninu čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.fact(System.Double)">
+            <summary>
+            Vracia faktoriál čísla
+            </summary>
+            <param name="a">Číslo, ktorého faktoriál bude spočítaný</param>
+            <returns>Vracia faktoriál čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.sinr(System.Double)">
+            <summary>
+            Vráti sinus čísla, ktoré je v raiánoch
+            </summary>
+            <param name="x">Číslo v radiánoch, ktorého sinus bude spočítaný</param>
+            <returns>Vracia sinus čísla x</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.cosr(System.Double)">
+            <summary>
+            Vracia cosinus čisla ktore je v radiánoch
+            </summary>
+            <param name="x">Číslo v radiánoch, ktorého cosinus bude spočítaný</param>
+            <returns>Vracia cosinus čísla x</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.tanr(System.Double)">
+            <summary>
+            Vrací tangens daného čísla, které je v RADIÁNECH
+            </summary>
+            <param name="a">Číslo v radiánoch, ktorého tangens bude spočítaný</param>
+            <returns>Vracia tangens čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.tgr(System.Double)">
+            <summary>
+            Vrací tangens daného čísla, které je v RADIÁNECH
+            </summary>
+            <param name="a">Číslo v radiánoch, ktorého tangens bude spočítaný</param>
+            <returns>Vracia tangens čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.tangr(System.Double)">
+            <summary>
+            Vrací tangens daného čísla, které je v RADIÁNECH
+            </summary>
+            <param name="a">Číslo v radiánoch, ktorého tangens bude spočítaný</param>
+            <returns>Vracia tangens čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.cotgr(System.Double)">
+            <summary>
+            Vracia cotangens čísla, ktoré je v RADIÁNOCH
+            </summary>
+            <param name="a">Číslo v radiánoch, ktorého cotangens bude spočítaný</param>
+            <returns>Vracia cotangens čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.cotanr(System.Double)">
+            <summary>
+            Vracia cotangens čísla, ktoré je v RADIÁNOCH
+            </summary>
+            <param name="a">Číslo v radiánoch, ktorého cotangens bude spočítaný</param>
+            <returns>Vracia cotangens čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.DegreeToRadian(System.Double)">
+            <summary>
+            Prepočíta veľkosť uhla zadaného v stupňoch do radiánov
+            </summary>
+            <param name="a">Veľkosť uhla v stupňoch, ktorá sa prepočíta na radiány</param>
+            <returns>Vracia uhol v radiánoch odpovedajúci zadanému uhlu v stupňoch</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.sin(System.Double)">
+            <summary>
+            Vrací sinus daného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého sinus bude spočítaný</param>
+            <returns>Vracia sinus čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.cos(System.Double)">
+            <summary>
+            Vracia cosinus dného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého cosinus bude spočítaný</param>
+            <returns>Vracia cosinus čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.tan(System.Double)">
+            <summary>
+            Vracia tangens daného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého tangens bude spočítaný</param>
+            <returns>Vracia tangens čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.tg(System.Double)">
+            <summary>
+            Vracia tangens daného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého tangens bude spočítaný</param>
+            <returns>Vracia tangens čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.tang(System.Double)">
+            <summary>
+            Vracia tangens daného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého tangens bude spočítaný</param>
+            <returns>Vracia tangens čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.cotan(System.Double)">
+            <summary>
+            Vracia cotangens daného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého cotangens bude spočítaný</param>
+            <returns>Vracia tangens čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.cotg(System.Double)">
+            <summary>
+            Vracia cotangens daného čísla, ktoré je v STUPŇOCH
+            </summary>
+            <param name="a">Číslo v stupňoch, ktorého cotangens bude spočítaný</param>
+            <returns>Vracia tangens čisla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.abs(System.Double)">
+            <summary>
+            Vracia absoltnú hodnotu čísla
+            </summary>
+            <param name="a">Číslo, ktorého absolútna hodnota bude spočítaná</param>
+            <returns>Vracia absolútnu hodnotu čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.log(System.Double,System.Double)">
+            <summary>
+            Vracia logaritmus čisla pri ľubovoľnom základe
+            </summary>
+            <param name="a">Číslo ktorého logaritmus má byť nájdený</param>
+            <param name="b">Číslo špecifikujúce základ logaritmu</param> 
+            <returns>Vracia logaritmus čísla a pri základe b</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.ln(System.Double)">
+            <summary>
+            Vracia prirodzený logaritmus čísla
+            </summary>
+            <param name="a">Číslo, ktorého prirodzený logaritmus bude spočítaný</param>
+            <returns>Vracia prirodzený logaritmus čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.declog(System.Double)">
+            <summary>
+            Vracia dekadický logaritmus čísla
+            </summary>
+            <param name="a">Číslo, ktorého dekadický logaritmus bude spočítaný</param>
+            <returns>Vracia dekadický logaritmus čísla a</returns>
+        </member>
+        <member name="M:ParserLib.MathLib.exp(System.Double)">
+            <summary>
+            Vracia hodnotu e(Eulerovo číslo) umocenú na špecifikovanu mocninu
+            </summary>
+            <param name="a">Číslo, na ktoré bude umocnené Eulerovo číslo</param>
+            <returns>Vracia hodnotu čísla e(Eulerovo číslo) umocenú na špecifikovanu mocninu a</returns>
+        </member>
+        <member name="M:ParserLib.Parser.#ctor">
+            <summary>
+            Konstruktor Parseru, jsou zde deklarovány potřebné proměnné
+            </summary>
+        </member>
+        <member name="M:ParserLib.Parser.Precedence(System.Char)">
+            <summary>
+            Returns precedence of a token (+,-,*,/...) for math equations
+            </summary>
+            <param name="a"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ParserLib.Parser.Vypocitat(System.String)">
+            <summary>
+            Parsuje daný řetězec a počítá ho
+            </summary>
+            <param name="func">Řetězec obsahující matematický výraz</param>
+            <returns>Vrací jednočíselný vyýsledek daného výrazu</returns>
+        </member>
+        <member name="M:ParserLib.Parser.constantsReplace">
+            <summary>
+            Nahrazuje konstanty z řetězce požadovanými hodnotami
+            </summary>
+        </member>
+        <member name="M:ParserLib.Parser.getMathFunctions">
+            <summary>
+            Pomocí reflexe získává informace o metodách ze třídy MathLib
+            </summary>
+            <returns>Vrací pole typu MethodInfo[], obsahující informace o metodách ve třídě MathLib</returns>
+        </member>
+        <member name="M:ParserLib.Parser.parseFunc(System.String)">
+            <summary>
+            Parses function into stack and output field, returns 0 id there were no errors, oterwise return 1
+            </summary>
+            <param name="func"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ParserLib.Parser.trimFunc(System.String)">
+            <summary>
+            Ořeže nechtěné znaky z řetězce
+            </summary>
+            <param name="func">Řetězec k ořezání</param>
+            <returns>Ořezaný řetězec</returns>
+        </member>
+        <member name="P:ParserLib.Parser.function">
+            <summary>
+            Variable stores last used function
+            </summary>
+        </member>
+        <member name="P:ParserLib.Parser.output">
+            <summary>
+            A list of string containing output stack of tokens
+            </summary>
+        </member>
+        <member name="P:ParserLib.Parser.stack">
+            <summary>
+            Stack containing tokens of operators and other non numeric characters
+            </summary>
+        </member>
+        <member name="M:ParserLib.StackC.pop">
+            <summary>
+            Vrátí řetezec na posledním indexu a poté ji smaže
+            </summary>
+            <returns>Vrátí hodnotu na posledním indexu</returns>
+        </member>
+        <member name="M:ParserLib.StackC.push(System.String)">
+            <summary>
+            Přidá řetězec na vrchol zásobníku
+            </summary>
+            <param name="insertstr"></param>
+        </member>
+    </members>
+</doc>
