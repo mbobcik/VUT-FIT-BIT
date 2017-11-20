@@ -1,0 +1,74 @@
+
+import re
+
+https://regex101.com/r/w0feaV/7/
+
+
+regex_po_radcich = r"(.+)"
+regex_sloupce_z_radku = r" ?([\w\s;.\\]+)"
+regex_sloupce_z_radku2 =  r",?(.+?)(?=,|$)"
+regex_sloupce_z_radku3 = r"(?:,?(?:\"\")(.+?)(?:\"\")(?=,|$))|(?:,?(.+?)(?=,|$))"
+regexNaValidniXMLZnacky =  r"^[_a-zA-Z][\w,_-]*(?=$)"
+regexNaValidniXMLZnacky2 =  r"^[_a-zA-Zěščřžýáíéůúó][\w,_-]*(?=$)"
+
+r"(?<=>)(?!\n)"  \n\t\t
+
+ r"(?<!\s)(?=<)"  \n\t
+
+r"%s?(.+?)(?=%s|$)"%(separator,separator)
+
+r"(?:%s?(?:\"{1,2})(.+?)(?:\"{1,2})(?=%s|$))|(?:%s?(.+?)(?=%s|$))"%(separator,separator,separator,separator)
+
+
+	matches = re.finditer(regex, test_str, re.MULTILINE)
+
+for matchNum, match in enumerate(matches):
+    matchNum = matchNum + 1
+
+    https://regex101.com/r/w0feaV/3     aha tady je
+
+
+    nevalidni značky v xml 
+
+matches = re.finditer(regex, test_str, re.MULTILINE | re.UNICODE)
+													  !!!!!!!!!!
+
+			What are shenanigans?? :D 
+
+    XML elements must follow these naming rules:
+
+Element names are case-sensitive
+Element names must start with a letter or underscore
+Element names cannot start with the letters xml (or XML, or Xml, etc)
+Element names can contain letters, digits, hyphens, underscores, and periods
+Element names cannot contain spaces
+
+
+-n nevypisovat xml hlavičku 
+ http://stackoverflow.com/questions/18100672/xmlwriter-writestartdocument-is-not-outputting-the-declaration-to-the-file
+
+ von wiki:  -h má u všech sloupců, kde to má smysl, prioritu přes -c.
+
+
+ 	# prepinac -h -- pokud je zadany xmltagy sloupcu se berou z prvniho sloupce
+    # pokud je v nejakem radku vic sloupcu nez v prvnim xmltag se bere z prepinace -c ... nebo -l ted nevim
+    # tak jinak ... ^^tohle jen v pripade ze je zadan prepinac all-columns
+    
+    # toto je hell
+
+    -n vypisovani xml hlavičky --  http://stackoverflow.com/a/42496056
+    						   --  http://stackoverflow.com/a/4999510
+
+
+asf%*sdg*dfg
+
+vytvořit xml s headerem
+	naskládat rows
+		naskládat cols
+prettyfy XML
+podle prepinacu ostrihat radky
+vypsat do souboru
+
+
+vymazani určitych radku z file http://stackoverflow.com/questions/4710067/deleting-a-specific-line-in-a-file-python
+							   https://www.tutorialspoint.com/python/string_splitlines.htm

@@ -1,0 +1,66 @@
+<?
+
+$rePrivacyModifier = "[public|private|protected]"
+
+$reModifier= "[static....]"
+
+$reName = "\w+";
+
+$reDataType = "bool|char|char16_t|char32_t|wchar_t|signed char|short int|int|long int|long long int|unsigned char|unsigned short int|unsigned int|unsigned long int|unsigned long long int|float|double|long double|void";
+
+
+
+$reMethod = '/($reModifier)\s+($reDataType)\s+($reName)\s+\((.*)\)/'
+
+
+
+$reParam = "($reDataType)\s+($rename)"
+
+regV pro parametry metody
+
+
+//
+//
+//		$re = '/class\s+(\w+)\s*:?\s*:?([\s\w,]*){(.*^)(?=class|$)/msU'; z regex101
+//														 ^positive lookahead, matchne, ale neskonzumuje
+//
+
+
+
+class A {public: virtual int f(void) =0;};
+class B : protected A {
+public:
+    static int var;
+};
+class C {};
+class D : B, public C {
+protected:
+    using B::var;
+};
+
+reV na class = '/class\s+(\w+)\s*:?\s*:?([\s\w,]*){(.*^)(?:(?=class)|$)/sUm'
+https://regex101.com/r/wDB74P/3
+
+reV na classBody= '/(.+?)(?=public|protected|private|};)/sm'
+https://regex101.com/r/Ifpb5C/1
+
+reV na inheritance = '/\s*((?:private)|(?:public)|(?:protected))?\s*(\w+),?/'
+https://regex101.com/r/E2j096/1
+
+reV na metody = '/((?:static|virtual)?\s+(?:int|string)(?:(?:\s*\*+\s*)|\s+))(\w+)\(([^)]*)\)(?:;|(\s*=0\s*;))/ms'
+https://regex101.com/r/SCIJLm/4   jaruv
+
+reV na metody = '/((?:static|virtual)?)\s+((?:int|string)(?:(?:\s*\*+\s*)|\s+))(\w+)\(([^)]*)\)(?:;|(\s*=0\s*;))/ms'
+https://regex101.com/r/SCIJLm/6	  muj
+
+reV na atribury = '/((?:static|virtual)?\s+(?:int|string)(?:(?:\s*\*+\s*)|\s+))(\w+);/ms'
+https://regex101.com/r/SCIJLm/3   jaruv
+
+reV na atributy = '/(?:(static|virtual)?\s+|)((?:(?:int|string)\s*\*+)|(?:int|string)\s+)\s*(\w+);/ms'
+https://regex101.com/r/SCIJLm/1/  muj
+
+reV na bodyClass v2= '/(public|protected|private|):?(.+?)(?=public|protected|private|};)/sm'
+https://regex101.com/r/Ifpb5C/3
+
+reV na parametry = '/((?:int|string)\s*\*\s*|(?:int|string)\s+)(\w+)/'
+https://regex101.com/r/ENjpNW/1

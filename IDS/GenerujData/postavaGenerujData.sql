@@ -1,0 +1,10 @@
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Robin', 'člověk', 'darebák', '48', '6');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Vendula', 'trpaslík', 'darebák', '49', '6');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Dalibor', 'trpaslík', 'lovec', '56', '10');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Valdemar', 'člověk', 'léčitel', '1', '7');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Denisa', 'ork', 'darebák', '57', '8');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Hynek', 'člověk', 'lovec', '45', '3');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Boleslav', 'ork', 'mág', '11', '2');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Jaroslav', 'člověk', 'léčitel', '4', '9');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Sára', 'elf', 'léčitel', '47', '6');
+INSERT INTO data (jmeno, rasa, povolani, uroven, id_player) VALUES ('Julius', 'ork', 'darebák', '5', '5');
