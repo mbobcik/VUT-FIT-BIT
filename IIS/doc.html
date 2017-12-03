@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+    
+    <title>Projekt IIS</title>
+    <style type="text/css">
+    	table { border-collapse: collapse; }
+    	td, th { border: 1px solid black; padding: 0.3em 0.5em; text-align: left; }
+    	dt { font-weight: bold; margin-top: 0.5em; }
+    </style>
+</head>
+<body>
+
+<!-- Zkontrolujte prosím nastavení kódování v hlavičce dokumentu 
+     podle použitého editoru -->
+
+<h1>36. Evidence řidičů včetně dopravních přestupků, evidence motorových vozidel.</h1> <!-- Nahradte názvem svého zadání -->
+
+<dl>
+	<dt>Autoři</dt>
+	<dd>Skryja Ondřej <!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti -->
+	    <a href="mailto:xskryj02@stud.fit.vutbr.cz">xskryj02@stud.fit.vutbr.cz</a> -
+		správa uživatelů a stránky profilů, databázový subsystém, hlavní menu
+	</dd>
+	<dd>Bobčík Martin<!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti -->
+	    <a href="mailto:xbobci00@stud.fit.vutbr.cz">xbobci00@stud.fit.vutbr.cz</a> - 
+		vyhledávání řidičů a vozidel, vytváření nových řidičů, vozidel a přestupků 
+	</dd>
+        <dd>Lacika Martin<!-- Nahraďte skutečným jménem a e-mailem autora a popisem činnosti -->
+	    <a href="mailto:xlacik02@stud.fit.vutbr.cz">xlacik02@stud.fit.vutbr.cz</a> - 
+		odevzdal projekt
+	</dd>        
+	<dt>URL aplikace</dt>
+	<dd><a href="http://www.iis2017-97.tode.cz">http://www.iis2017-97.tode.cz</a></dd>
+</dl>
+
+<h2>Uživatelé systému pro testování</h2>
+<p>Uveďte prosím existující zástupce <strong>všech rolí uživatelů</strong>.</p>
+<table>
+<tbody><tr><th>Login</th><th>Heslo</th><th>Role</th></tr>
+<tr><td>admin</td><td>adminadmin</td><td>Administrátor</td></tr>
+<tr><td>editor</td><td>editedit</td><td>Editor</td></tr>
+<tr><td>user</td><td>useruser</td><td>Uživatel</td></tr>
+</tbody></table>
+
+<h2>Implementace</h2>
+<p>Celý informační systém se zobrazuje na jedné stránce (index.php), na kterou se vkládají požadované části. Informace o tom, která část se vloží, je v adrese. Systém obsahuje několik hlavních částí. 
+    Uživatelé, vyhledávání, vytváření a profily. Část uživatelů je zodpovědná za přihlašování a odhlašování, úpravu a ostranění uživatele a zobrazení historie. Vyhledávací část dovoluje vyhledávat mezi vozidly nebo
+    řidiči. Část vytváření, dovoluje vytvořit vozidlo, řidiče nebo přestupek. Část profilů zobrazuje a propojuje řidiče, vozidla a přestupky, dovoluje je upravovat a mazat. Také zakládá, upravuje a maže řidičské a technické průkazy.</p>
+
+<h2>Instalace</h2>
+<ul>
+<li>Nakopírovat soubory na server (kromě adresáře Install)</li>
+<li>Vytvořit prázdnou databázi (preferované jeméno je iis2017)</li>
+<li>Spuztit databázavý script (v adresáři Install - db.sql) pro vytvoření struktury databáze a základních dat</li>
+<li>V souboru conf.php nastavit přístup do databáze a jméno databáze</li>
+</ul>
+
+<h2>Softwarové požadavky</h2>
+<ul>
+<li>PHP verze 7.1.12</li>
+<li>MySQL server verze 5.6.28-76.1 - Percona Server (GPL), Release 76.1, Revision 5759e76</li>
+</ul>
+
+<h2>Známé problémy</h2>
+<p>Zde popište, které body zadání (IDS a IIS) nejsou implementovány a z jakého důvodu. Např. &#8222;Z časových důvodů nebyla implementována správa uživatelů.&#8221; Pomůžete tím zrychlit opravování, když neimplementované funkce nebudeme muset dlouze hledat.</p>
+
+
+
+</body></html>

@@ -48,3 +48,33 @@ Seznam odevzdanych souboru
     ./README
     ./Makefile
     ./manual.pdf
+
+Komentar k hodnoceni:
+dokumentace:
+- struktura: 1/1
+- prehled nastudovanych informaci: 2/2
+- popis implementace: 1/2
+- literatura: 1/1
+- SUM: 5/6
+
+funkcionalita:
+- podpora a vypis protokou: 1.5/3
+- podpora fragmentace: 0/4
+- agreagace: 2/3
+- razeni: 2/2
+- agreagace a razeni: 2/2
+- SUM: 7.5/14
+
+penalizace:
+- vyskyt abnormalniho ukonceni: 1
+- chyba ve zpracovani argumentu: 1
+- nekvalitni zdrojovy kod: 1
+- SUM: 3
+
+bonus:
+- podpora 3 a vice VLAN tagu: 0.5
+- ICMPv4 v IPv6: 0.5
+- pouziti asociativni pameti: 0.5
+- SUM: 1.5
+
+celkove bodu: 11/20

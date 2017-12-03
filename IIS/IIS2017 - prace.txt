@@ -1,0 +1,26 @@
+Lacika Martin
+  -Administrace uzivatelu
+    Obrazovky:
+      - prihlaseni
+      - zmena vlastniho hesla
+      - vytvoreni, smazani uzivatele
+      - zmena role (prav) uziatele
+      - zmena hesla vybraneho uzivatele
+      - zobrazeni historie
+
+
+Bobčík Martin	
+  - Vyhledani
+    Obrazovky:
+      - ridice
+      - vozidla
+  - Vytvoreni    
+    Obrazovky:
+      - ridice
+      - vozidla
+      - prestupku
+      
+      
+Skryja Ondřej
+  - Profily
+    - ridic, vozidlo, prestupek + propojeni

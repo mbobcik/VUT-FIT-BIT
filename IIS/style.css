@@ -1,0 +1,132 @@
+*{
+    margin: 0 auto;    
+}
+
+html, body{
+    background: gray;  
+    height: 100%;
+}
+
+#page{
+    background: white; 
+    border: 3px black solid; 
+    height: 100%;
+    width: 80%;
+    padding: 20px;
+}
+
+#profilPage{
+    height: 100%;
+    width: 99%;
+}
+
+#profilMenu{
+    width: 100%;
+    clear: both;
+}
+
+#profilMenu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: gray;
+}
+
+#profilMenu li{
+    float: left;
+}
+
+#profilMenu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menuspan{        
+    display: inline-block;
+    color: white;
+    text-align: right;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+#profilMenu li a:hover {
+    background-color: lightgray;
+}
+
+#profilMenu li a.selected{
+    background-color: darkgray;
+}
+
+#profilBody{
+    padding-top: 10px;
+    height: fit-content;
+    width: 100%;
+}
+
+#udajeProfilu{    
+    width: 90%;
+    text-align: left;
+}
+
+#prukazExpand{
+    width: 90%;    
+}
+.vysledekVyhledavani table {
+    border-collapse: collapse;
+    width: 100%;}
+
+.vysledekVyhledavani th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.vysledekVyhledavani tr:hover {
+    background-color: #f5f5f5;
+}
+
+
+.expandHead{
+    background-color: gray;
+    padding: 10px;
+    border: solid black 1px;
+    border-bottom: solid black 2px;    
+    color: white;
+}
+
+.expandBody{
+    background-color: lightgray;
+    padding: 10px;
+    display: none;
+}
+
+.expandBody table{
+    margin-left: 0;
+}
+
+.myTable{
+    background-color: black
+}
+
+.tableHead td{
+    background-color: gray; 
+    padding: 5px;
+}
+
+.tableBody td{
+    background-color: lightgray;
+    padding: 5px;
+}
+
+.tableBody a{
+    color: blue;
+}
+
+h1{
+    color: gray;
+}
