@@ -1,0 +1,39 @@
+﻿<Window x:Class="PhotoLibrary.App.Views.PersonDetailView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:PhotoLibrary.App.ViewModels"
+        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+        DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=PersonDetailViewModel}"
+        xmlns:wpfTool="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+        d:DataContext="{d:DesignInstance viewModels:PersonDetailViewModel, IsDesignTimeCreatable=False}"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="Auto" Width="800"
+        x:Name="Window">
+    <Grid Background="#202020" ShowGridLines="False" DataContext="{Binding Detail}" Resources="{StaticResource ShinyBlueTheme}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0"  Content="Priezvisko:"></Label>
+        <TextBlock Grid.Row="0" Grid.Column="1" Foreground="AntiqueWhite" Name="TextBox" Text="{Binding Surname}"></TextBlock>
+        <Label Grid.Row="1" Grid.Column="0"  Content="Meno:"></Label>
+        <TextBlock Grid.Row="1" Grid.Column="1" Foreground="AntiqueWhite" Name="FilePathTextBox" Text="{Binding FirstName}"></TextBlock>
+    </Grid>
+
+</Window>

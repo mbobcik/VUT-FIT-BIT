@@ -1,0 +1,287 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    margin: 0px auto;
+    padding: 0px;
+    
+    background: #b0ebcf ;
+    height: 100%;
+   
+}
+#container {
+    min-height:100%;
+    position: relative;
+   /* text-align: center;*/
+}
+
+header {
+   width: 59.3em;
+    margin: auto;
+}
+
+#navbar {
+    width: 932px;
+    
+}
+/*
+#logo {
+        position: relative;
+        left: 50%;
+        top: 35%;
+        margin-top: 40px;
+        height: 150px;
+        padding-top: 100px;
+        font-size: 40px;
+        
+}*/
+
+#navbar h1#print{
+    display: none;
+}
+
+#navbar h1 a{
+    background-image: url(img/logo.png) ;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    width: 950px;
+    height: 150px;
+    display: inline-block;
+
+}
+
+#navbar li{
+    vertical-align: middle;
+    display: inline;
+}
+
+.menu ul{
+    list-style-type: none;
+  /*  display: inline-block;*/
+}
+
+.menu-top {
+    background: #BF6430;
+    width: 100%;
+    padding: 9px;
+    display: inline-block;
+    margin-top: -6px;
+}
+
+.menu-top ul{
+    float:left;
+    display: inline-block;
+   /* margin-top: 10px;*/
+}
+
+.menu-top li, .menu-top li a:visited {
+    height: 30px;
+    background: #BF6430;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.menu-top ul .selected, .menu-top ul .selected a:visited {
+    background: #A62A00;
+   /* padding-top: 20px;*/
+}
+
+.menu-context li, .menu-context li a:visited {
+    height: 30px;
+    background:  #A65C00;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.menu-context ul .selected, .menu-context ul .selected a:visited {
+    background:#BF8030;
+}
+
+.menu-context {
+    float: left;
+    display: inline-block;
+    margin-top: -4px;
+   /* margin-left: -299px;*/
+    background: #A65C00;
+    padding: 9px;
+    width: 100%;
+        min-height: 19px;
+}
+
+.menu-context ul{
+    float:left;
+    display: inline-block;
+    /*margin-top: 10px;*/
+}
+
+#page-title{
+   margin-top: 33px;
+    padding-left: 15px;
+    margin-bottom: 4px;
+    height: 4em;
+    color: #01121e;
+    background: #3e97d1;
+    width: 935px;
+}
+
+#page-title h1 {
+padding: 5px 0;
+font-size: 140%;
+border-bottom: 1px solid #000000;
+}
+
+#page-title h2 {
+font-size: 120%;
+
+}
+
+#main{
+    width: 908px;
+       /* margin: 0px auto; */
+    /*position: relative;
+    left: 22%;*/
+    margin: auto;
+    border: 2px solid #fff;
+    background-color: #eee;
+    /*border-radius: 1%;*/
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 50px;
+    margin-bottom: 300px;
+}
+
+#main img{
+    width: 256px;
+    height: 256px;
+    padding: 10px;
+    display: block;
+padding: 15px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#main p {
+    padding: 10px;
+}
+
+.aktualita {
+        display: inline-block;
+    height: 160px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ddd;
+    border: 2px solid #aaa;
+}
+
+#main .aktualita img {
+    height: 128px;
+    width: 128px;
+    float: left;
+    padding: 0px;
+}
+
+#main ul, #main ol{
+    padding: 0px 20px;
+}
+
+#main h3{
+    padding: 5px 20px;
+}
+
+#main p.o-nas {
+    width: 50%;
+}
+
+#main .aktualita h3 {
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+#main .aktualita p {
+    padding-left: 140px;
+}
+
+.o-nas a:visited{
+    color: #A62A00;
+}
+.o-nas a{
+    color: #BF6430;
+}
+#footer {
+color: #FFFFFF;
+background-color: #555;
+width: 100%;
+position: fixed;
+bottom: 0px;  
+height:150px;
+text-align: center;
+}
+
+#footer a, a:hover, a:visited{
+    color:#ffff66;
+    text-decoration: none;
+}
+
+#footer a {
+    color: #ffb366
+}
+
+#footer  a:visited {
+    color:#b3ff66;
+}
+
+#copyright {
+height: 20px;
+color:#FFFFFF;
+background-color: #333333
+}
+
+#site-map {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    bottom: 0px;
+    display: inline-block;
+    text-align: left;
+    width: 960px;
+    height: 100px;
+}
+
+#site-map ul {
+    list-style: none;
+}
+
+
+#site-map  ul > ul > li{
+     padding-left: .5em;
+}
+
+.first-section {
+    float: left;
+    /* height: 200px; */
+    width: 440px;
+
+    border-left: 2px solid #000 ;
+    padding-left: 5px;
+}
+
+.second-section {
+    margin-left: 440px;
+    border-left: 2px solid #000;
+    padding-left: 5px;
+}
+
+.third-section {
+    float: right;
+    /* height: 154px; */
+    width: 131px;
+    margin-top: -54px;
+
+    border-left: 2px solid #000 ;
+    padding-left: 5px;
+}
+

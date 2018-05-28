@@ -1,0 +1,39 @@
+﻿<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:PhotoLibrary.App.ViewModels"
+        xmlns:views="clr-namespace:PhotoLibrary.App.Views"
+        x:Class="PhotoLibrary.App.Views.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        d:DataContext="{d:DesignInstance {x:Type viewModels:MainViewModel}, IsDesignTimeCreatable=False}">
+    <Window.DataContext>
+        <Binding Path="MainViewModel" Source="{StaticResource ViewModelLocator}"/>
+    </Window.DataContext>
+    <Grid Resources="{StaticResource ShinyBlueTheme}">
+        <TabControl>
+            <TabItem Header="Alba">
+                <Grid Background="#202020">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="FirstGrid" Grid.RowSpan="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Button  Content="Pridať album" Command="{Binding CreateAlbumCommand}"></Button>
+                        <views:AlbumListView Grid.Row="1"></views:AlbumListView>
+                    </Grid>
+                    <views:AlbumDetailView Grid.Column="1" MaxWidth="{Binding ActualWidth, ElementName=ListColumnGrid}" Grid.RowSpan="2"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

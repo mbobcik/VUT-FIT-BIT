@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="Ija_proj" default="compile" basedir="./">
+    <description>
+        ANT XML FOR PROJECT IJA
+    </description>
+
+    <property name="src.dir" location="src"/>
+    <property name="lib.dir" location="lib"/>
+    <property name="build.dir" location="build"/>
+    <property name="test.dir" location="src"/>
+    <property name="test-report.dir" location="src"/>
+
+    <property name="doc.dir" location="doc"/>
+    <property name="dest-client.dir" location="dest-client"/>
+    <property name="dest-server.dir" location="dest-server"/>
+
+    <path id="test-class">
+        <fileset dir="lib" includes="**/*.jar"/>
+        <pathelement location="${build.dir}/"/>
+    </path>
+
+    <!-- VYCISTY VYTVORENE SUBORY-->
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dest-client.dir}"/>
+        <delete dir="${dest-server.dir}"/>
+        
+        <delete dir="${doc.dir}"/>
+        <mkdir dir="${doc.dir}"/>
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${dest-client.dir}"/>
+        <mkdir dir="${dest-server.dir}"/>
+    </target>
+
+    <!--Generování JAR souborů-->
+    <target name="jar" description="Generate Jar">
+        <jar destfile = "${dest-client.dir}/ija-client.jar"
+            basedir = "${build.dir}"
+            includes = "ija_proj/**"
+            excludes = "**/*test*.class">
+      
+            <manifest>
+               <attribute name = "Main-Class" value = "ija_proj.gui.GUI"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <!--Překlad projektu-->
+    <target name="build" depends="clean" description="Build project">
+        <!-- Vytvorenie class suborou-->
+        <javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false">
+            <classpath refid="test-class"/>
+        </javac>
+        <pathconvert property="classpathProp" refid="test-class"/>
+        <echo>${classpathProp}</echo>
+    </target>
+
+    <!--Generování javadoc dokumentace-->
+    <target name="doc" description="Generate doc">
+        <javadoc encoding="UTF-8" charset="UTF-8" sourcepath="${src.dir}" destdir="${doc.dir}" windowtitle="Projekt IJA">
+            <classpath>
+                <fileset dir="${lib.dir}">
+                    <include name="*.jar"/>
+                </fileset>
+            </classpath>
+        </javadoc>
+    </target>
+
+    <!--SKOMPILOVANIE PROJEKTU-->
+    <target name="compile" depends="build,jar,doc" description="Compile"/>
+    
+
+    <!--SPUSTENIE Programu-->
+    <target name="run" depends="compile">
+        <java jar="${dest-client.dir}/ija-client.jar" fork="true"/>
+    </target>
+</project>
